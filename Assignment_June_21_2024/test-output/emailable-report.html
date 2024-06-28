@@ -1,0 +1,447 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>TestNG Report</title>
+<style type="text/css">
+table {
+	margin-bottom: 10px;
+	border-collapse: collapse;
+	empty-cells: show
+}
+
+th, td {
+	border: 1px solid #009;
+	padding: .25em .5em
+}
+
+th {
+	vertical-align: bottom
+}
+
+td {
+	vertical-align: top
+}
+
+table a {
+	font-weight: bold
+}
+
+.stripe td {
+	background-color: #E6EBF9
+}
+
+.num {
+	text-align: right
+}
+
+.passedodd td {
+	background-color: #3F3
+}
+
+.passedeven td {
+	background-color: #0A0
+}
+
+.skippedodd td {
+	background-color: #DDD
+}
+
+.skippedeven td {
+	background-color: #CCC
+}
+
+.failedodd td, .attn {
+	background-color: #F33
+}
+
+.failedeven td, .stripe .attn {
+	background-color: #D00
+}
+
+.stacktrace {
+	white-space: pre;
+	font-family: monospace
+}
+
+.totop {
+	font-size: 85%;
+	text-align: center;
+	border-bottom: 2px solid #000
+}
+
+.invisible {
+	display: none
+}
+</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>Test</th>
+			<th># Passed</th>
+			<th># Skipped</th>
+			<th># Retried</th>
+			<th># Failed</th>
+			<th>Time (ms)</th>
+			<th>Included Groups</th>
+			<th>Excluded Groups</th>
+		</tr>
+		<tr>
+			<th colspan="8">Suite</th>
+		</tr>
+		<tr>
+			<td><a href="#t0">Test</a></td>
+			<td class="num">0</td>
+			<td class="num">0</td>
+			<td class="num attn">2</td>
+			<td class="num attn">2</td>
+			<td class="num">21,955</td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+	<table id='summary'>
+		<thead>
+			<tr>
+				<th>Class</th>
+				<th>Method</th>
+				<th>Start</th>
+				<th>Time (ms)</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th colspan="4">Suite</th>
+			</tr>
+		</tbody>
+		<tbody id="t0">
+			<tr>
+				<th colspan="4">Test &#8212; failed</th>
+			</tr>
+			<tr class="failedeven">
+				<td rowspan="2">com.naveenautomationlabs.PageTests.ChangePasswordPageTest</td>
+				<td><a href="#m0">validateChangePswWithInvalidPsw</a></td>
+				<td rowspan="1">1719495152391</td>
+				<td rowspan="1">2405</td>
+			</tr>
+			<tr class="failedeven">
+				<td><a href="#m1">validateChangePswWithMismatchPsw</a></td>
+				<td rowspan="1">1719495162872</td>
+				<td rowspan="1">2890</td>
+			</tr>
+			<tr>
+				<th colspan="4">Test &#8212; retried</th>
+			</tr>
+			<tr class="retriedeven">
+				<td rowspan="2">com.naveenautomationlabs.PageTests.ChangePasswordPageTest</td>
+				<td><a href="#m2">validateChangePswWithInvalidPsw</a></td>
+				<td rowspan="1">1719495149252</td>
+				<td rowspan="1">1311</td>
+			</tr>
+			<tr class="retriedeven">
+				<td><a href="#m3">validateChangePswWithMismatchPsw</a></td>
+				<td rowspan="1">1719495158165</td>
+				<td rowspan="1">1216</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>Test</h2>
+	<h3 id="m0">com.naveenautomationlabs.PageTests.ChangePasswordPageTest#validateChangePswWithInvalidPsw</h3>
+	<table class="result">
+		<tr>
+			<th>Exception</th>
+		</tr>
+		<tr>
+			<td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException:
+					stale element reference: stale element not found (Session info:
+					chrome=126.0.6478.116) For documentation on this error, please
+					visit:
+					https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+					Build info: version: &apos;4.15.0&apos;, revision:
+					&apos;1d14b5521b&apos; System info: os.name: &apos;Windows
+					11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;,
+					java.version: &apos;17.0.10&apos; Driver info:
+					org.openqa.selenium.chrome.ChromeDriver Command:
+					[9cec28b89cf73248ef86b694d1a613ec, getElementText
+					{id=f.3C931189C9415645BCABF36CACB0C6FB.d.D4FA3F99100321BC27B988F9FC0F0C80.e.69}]
+					Capabilities {acceptInsecureCerts: false, browserName: chrome,
+					browserVersion: 126.0.6478.116, chrome: {chromedriverVersion:
+					126.0.6478.126 (d36ace6122e..., userDataDir:
+					C:\Users\DELL\AppData\Local...}, fedcm:accounts: true,
+					goog:chromeOptions: {debuggerAddress: localhost:55540},
+					networkConnectionEnabled: false, pageLoadStrategy: normal,
+					platformName: windows, proxy: Proxy(), se:cdp:
+					ws://localhost:55540/devtoo..., se:cdpVersion: 126.0.6478.116,
+					setWindowRect: true, strictFileInteractability: false, timeouts:
+					{implicit: 0, pageLoad: 300000, script: 30000},
+					unhandledPromptBehavior: dismiss and notify,
+					webauthn:extension:credBlob: true, webauthn:extension:largeBlob:
+					true, webauthn:extension:minPinLength: true,
+					webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+					Element: [[ChromeDriver: chrome on windows
+					(9cec28b89cf73248ef86b694d1a613ec)] -&gt; css selector:
+					div.list-group a:nth-of-type(3)] Session ID:
+					9cec28b89cf73248ef86b694d1a613ec at
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+					at
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+					at
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+					at
+					org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+					at
+					org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+					at
+					org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+					at
+					org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+					at
+					org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+					at
+					org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:192)
+					at
+					org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:375)
+					at jdk.proxy2/jdk.proxy2.$Proxy17.getText(Unknown Source) at
+					com.naveenautomationalab.listeners.WebDriverEvents.afterClickOn(WebDriverEvents.java:109)
+					at
+					org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:85)
+					at jdk.proxy2/jdk.proxy2.$Proxy11.afterClickOn(Unknown Source) at
+					org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:388)
+					at
+					org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+					at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source) at
+					com.naveenautomationlabs.Pages.MyAccountPage.clickPasswordBtn(MyAccountPage.java:63)
+					at
+					com.naveenautomationlabs.PageTests.ChangePasswordPageTest.validateChangePswWithInvalidPsw(ChangePasswordPageTest.java:28)
+					at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ...
+					Removed 44 stack frames</div></td>
+		</tr>
+	</table>
+	<p class="totop">
+		<a href="#summary">back to summary</a>
+	</p>
+	<h3 id="m1">com.naveenautomationlabs.PageTests.ChangePasswordPageTest#validateChangePswWithMismatchPsw</h3>
+	<table class="result">
+		<tr>
+			<th>Exception</th>
+		</tr>
+		<tr>
+			<td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException:
+					stale element reference: stale element not found (Session info:
+					chrome=126.0.6478.116) For documentation on this error, please
+					visit:
+					https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+					Build info: version: &apos;4.15.0&apos;, revision:
+					&apos;1d14b5521b&apos; System info: os.name: &apos;Windows
+					11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;,
+					java.version: &apos;17.0.10&apos; Driver info:
+					org.openqa.selenium.chrome.ChromeDriver Command:
+					[08c2d69a0a40726ca968414a1213fe36, getElementText
+					{id=f.D67701C283D392B882AA45184E206C40.d.692C1D626FC117B10C05DA1531A880F2.e.75}]
+					Capabilities {acceptInsecureCerts: false, browserName: chrome,
+					browserVersion: 126.0.6478.116, chrome: {chromedriverVersion:
+					126.0.6478.126 (d36ace6122e..., userDataDir:
+					C:\Users\DELL\AppData\Local...}, fedcm:accounts: true,
+					goog:chromeOptions: {debuggerAddress: localhost:55597},
+					networkConnectionEnabled: false, pageLoadStrategy: normal,
+					platformName: windows, proxy: Proxy(), se:cdp:
+					ws://localhost:55597/devtoo..., se:cdpVersion: 126.0.6478.116,
+					setWindowRect: true, strictFileInteractability: false, timeouts:
+					{implicit: 0, pageLoad: 300000, script: 30000},
+					unhandledPromptBehavior: dismiss and notify,
+					webauthn:extension:credBlob: true, webauthn:extension:largeBlob:
+					true, webauthn:extension:minPinLength: true,
+					webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+					Element: [[ChromeDriver: chrome on windows
+					(08c2d69a0a40726ca968414a1213fe36)] -&gt; css selector:
+					div.list-group a:nth-of-type(3)] Session ID:
+					08c2d69a0a40726ca968414a1213fe36 at
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+					at
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+					at
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+					at
+					org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+					at
+					org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+					at
+					org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+					at
+					org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+					at
+					org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+					at
+					org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:192)
+					at
+					org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:375)
+					at jdk.proxy2/jdk.proxy2.$Proxy17.getText(Unknown Source) at
+					com.naveenautomationalab.listeners.WebDriverEvents.afterClickOn(WebDriverEvents.java:109)
+					at
+					org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:85)
+					at jdk.proxy2/jdk.proxy2.$Proxy11.afterClickOn(Unknown Source) at
+					org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:388)
+					at
+					org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+					at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source) at
+					com.naveenautomationlabs.Pages.MyAccountPage.clickPasswordBtn(MyAccountPage.java:63)
+					at
+					com.naveenautomationlabs.PageTests.ChangePasswordPageTest.validateChangePswWithMismatchPsw(ChangePasswordPageTest.java:38)
+					at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ...
+					Removed 44 stack frames</div></td>
+		</tr>
+	</table>
+	<p class="totop">
+		<a href="#summary">back to summary</a>
+	</p>
+	<h3 id="m2">com.naveenautomationlabs.PageTests.ChangePasswordPageTest#validateChangePswWithInvalidPsw</h3>
+	<table class="result">
+		<tr>
+			<th>Exception</th>
+		</tr>
+		<tr>
+			<td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException:
+					stale element reference: stale element not found (Session info:
+					chrome=126.0.6478.116) For documentation on this error, please
+					visit:
+					https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+					Build info: version: &apos;4.15.0&apos;, revision:
+					&apos;1d14b5521b&apos; System info: os.name: &apos;Windows
+					11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;,
+					java.version: &apos;17.0.10&apos; Driver info:
+					org.openqa.selenium.chrome.ChromeDriver Command:
+					[f6f799546b0e21ebe302b583900c85dd, getElementText
+					{id=f.C49EE36E2D9A5264E3498787BEC5B589.d.2A40734E2E3B1AB0EEFE0A98E07EF50B.e.69}]
+					Capabilities {acceptInsecureCerts: false, browserName: chrome,
+					browserVersion: 126.0.6478.116, chrome: {chromedriverVersion:
+					126.0.6478.126 (d36ace6122e..., userDataDir:
+					C:\Users\DELL\AppData\Local...}, fedcm:accounts: true,
+					goog:chromeOptions: {debuggerAddress: localhost:55507},
+					networkConnectionEnabled: false, pageLoadStrategy: normal,
+					platformName: windows, proxy: Proxy(), se:cdp:
+					ws://localhost:55507/devtoo..., se:cdpVersion: 126.0.6478.116,
+					setWindowRect: true, strictFileInteractability: false, timeouts:
+					{implicit: 0, pageLoad: 300000, script: 30000},
+					unhandledPromptBehavior: dismiss and notify,
+					webauthn:extension:credBlob: true, webauthn:extension:largeBlob:
+					true, webauthn:extension:minPinLength: true,
+					webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+					Element: [[ChromeDriver: chrome on windows
+					(f6f799546b0e21ebe302b583900c85dd)] -&gt; css selector:
+					div.list-group a:nth-of-type(3)] Session ID:
+					f6f799546b0e21ebe302b583900c85dd at
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+					at
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+					at
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+					at
+					org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+					at
+					org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+					at
+					org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+					at
+					org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+					at
+					org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+					at
+					org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:192)
+					at
+					org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:375)
+					at jdk.proxy2/jdk.proxy2.$Proxy17.getText(Unknown Source) at
+					com.naveenautomationalab.listeners.WebDriverEvents.afterClickOn(WebDriverEvents.java:109)
+					at
+					org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:85)
+					at jdk.proxy2/jdk.proxy2.$Proxy11.afterClickOn(Unknown Source) at
+					org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:388)
+					at
+					org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+					at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source) at
+					com.naveenautomationlabs.Pages.MyAccountPage.clickPasswordBtn(MyAccountPage.java:63)
+					at
+					com.naveenautomationlabs.PageTests.ChangePasswordPageTest.validateChangePswWithInvalidPsw(ChangePasswordPageTest.java:28)
+					at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ...
+					Removed 44 stack frames</div></td>
+		</tr>
+	</table>
+	<p class="totop">
+		<a href="#summary">back to summary</a>
+	</p>
+	<h3 id="m3">com.naveenautomationlabs.PageTests.ChangePasswordPageTest#validateChangePswWithMismatchPsw</h3>
+	<table class="result">
+		<tr>
+			<th>Exception</th>
+		</tr>
+		<tr>
+			<td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException:
+					stale element reference: stale element not found (Session info:
+					chrome=126.0.6478.116) For documentation on this error, please
+					visit:
+					https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+					Build info: version: &apos;4.15.0&apos;, revision:
+					&apos;1d14b5521b&apos; System info: os.name: &apos;Windows
+					11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;,
+					java.version: &apos;17.0.10&apos; Driver info:
+					org.openqa.selenium.chrome.ChromeDriver Command:
+					[403fefdead35a27c95005e941bef1cce, getElementText
+					{id=f.772DD3FB3F4E16C3FA7FD732F5BABC28.d.5BE7FAEB224E0CFE3FB1058567B0D59B.e.69}]
+					Capabilities {acceptInsecureCerts: false, browserName: chrome,
+					browserVersion: 126.0.6478.116, chrome: {chromedriverVersion:
+					126.0.6478.126 (d36ace6122e..., userDataDir:
+					C:\Users\DELL\AppData\Local...}, fedcm:accounts: true,
+					goog:chromeOptions: {debuggerAddress: localhost:55565},
+					networkConnectionEnabled: false, pageLoadStrategy: normal,
+					platformName: windows, proxy: Proxy(), se:cdp:
+					ws://localhost:55565/devtoo..., se:cdpVersion: 126.0.6478.116,
+					setWindowRect: true, strictFileInteractability: false, timeouts:
+					{implicit: 0, pageLoad: 300000, script: 30000},
+					unhandledPromptBehavior: dismiss and notify,
+					webauthn:extension:credBlob: true, webauthn:extension:largeBlob:
+					true, webauthn:extension:minPinLength: true,
+					webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+					Element: [[ChromeDriver: chrome on windows
+					(403fefdead35a27c95005e941bef1cce)] -&gt; css selector:
+					div.list-group a:nth-of-type(3)] Session ID:
+					403fefdead35a27c95005e941bef1cce at
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+					at
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+					at
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+					at
+					org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+					at
+					org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+					at
+					org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+					at
+					org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+					at
+					org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+					at
+					org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:192)
+					at
+					org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:375)
+					at jdk.proxy2/jdk.proxy2.$Proxy17.getText(Unknown Source) at
+					com.naveenautomationalab.listeners.WebDriverEvents.afterClickOn(WebDriverEvents.java:109)
+					at
+					org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:85)
+					at jdk.proxy2/jdk.proxy2.$Proxy11.afterClickOn(Unknown Source) at
+					org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:388)
+					at
+					org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+					at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source) at
+					com.naveenautomationlabs.Pages.MyAccountPage.clickPasswordBtn(MyAccountPage.java:63)
+					at
+					com.naveenautomationlabs.PageTests.ChangePasswordPageTest.validateChangePswWithMismatchPsw(ChangePasswordPageTest.java:38)
+					at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ...
+					Removed 44 stack frames</div></td>
+		</tr>
+	</table>
+	<p class="totop">
+		<a href="#summary">back to summary</a>
+	</p>
+</body>
+</html>
